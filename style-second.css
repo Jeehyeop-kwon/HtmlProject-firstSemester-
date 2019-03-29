@@ -1,0 +1,386 @@
+/**
+ * reset
+ */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/**
+ * body styling =======================
+ */
+body {
+  width: 100%;
+}
+
+/**
+ * header styling =======================
+ */
+
+header div.banner {
+  width: 100%;
+}
+
+/**
+ * header img styling =======================
+ */
+header img {
+   width: 100%;
+   position: relative;
+ }
+
+
+ /**
+  * nav styling =======================
+  */
+  nav {
+    overflow: hidden;
+    background-color: rgb(255, 204, 204);
+    width: 100%;
+  }
+ul {
+    list-style-type: none;
+  }
+nav li {
+  float: left;
+  width: 20%;
+}
+
+nav li a {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+nav li :visited {
+  color: #ffffff;
+}
+nav li :hover {
+  background-color: #f44336;
+}
+
+
+.dropDown-contents {
+  position: absolute;
+  text-align: center;
+  width: 249px;
+  left:-9999px;
+  z-index: 1;
+}
+.contents a {
+  font-size: 15px;
+  padding: 10px;
+}
+
+.dropDown:hover .dropDown-contents {
+  left: auto;
+  right: 0;
+  background-color: grey;
+}
+.contents:hover {
+  background-color: blue;
+  opacity: 0.5;
+}
+
+
+
+@media only screen and (max-width: 730px) {
+  nav li {float: none; text-align: center; width: 100%;}
+  .pagination1, .pagination2 {display: none;}
+  .dropDown-contents {position: static; width: 100%; display: none;}
+  .dropDown:hover .dropDown-contents {display: block;}
+}
+/**
+ * footer styling =======================
+ */
+
+footer {
+  width: 100%;
+  height: 200px;
+  text-align: center;
+}
+footer img {
+  width: 50%;
+  height: 200px;
+  float: left;
+}
+footer div {
+  width: 50%;
+  padding-top: 127px;
+  border: 1px solid black;
+  padding-left: 50%;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+.copyRight a {
+  text-decoration: none;
+  transition-duration: 0.5s ease;
+}
+
+.copyRight p:hover {
+  background-color: #80808036;;
+  font-size: 18px;
+}
+/**
+ * history-main styling =======================
+ */
+
+main div.main-logo {
+
+  width: 30%;
+  float: left;
+  border-right: solid #b3ecff;
+  border-bottom: solid #b3ecff;
+  border-style: outset;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 20px 0 ;
+  margin-top: 10px;
+}
+
+main img {
+  width: 100%;
+  height: auto;
+
+}
+
+section {
+  width: 60%;
+  margin-left: 40%;
+  margin-right: 10%;
+  height: 2000px;
+  overflow: scroll;
+}
+
+section h1 p {
+  padding-left: 30px;
+}
+
+ section p.history {
+   font-size: 20px;
+   font-weight: bold;
+   color: blue;
+   text-transform: capitalize;
+   text-indent: 3%;
+ }
+
+ /**
+  * playNintendo-main styling =======================
+  */
+section.main-playNintendo {
+  margin: 0;
+  width: 100%;
+  height: auto;
+}
+aside {
+  width: 100%;
+}
+
+aside div.main-playNintendo {
+  width: 60%;
+  height: auto;
+  float: left;
+  padding-top: 30px;
+}
+
+aside div img {
+  width: 600px;
+  height: auto;
+  padding-left: 10px;
+
+}
+
+aside div.gameDescription {
+  margin-left: 60%;
+
+}
+aside div.gameDescription p {
+  padding-top: 50px;
+  line-height: 20px;
+  letter-spacing: normal;
+}
+
+div.clearfix {
+  clear: both;
+}
+@media only screen and (max-width: 1049px) {
+  aside div.main-playNintendo {float: none; width: 100%;}
+  aside.main-playNintendo {width: 50%; margin: auto;}
+  aside div.gameDescription {margin: 0;}
+  aside div img {position: relative; left: -80px;}
+}
+@media only screen and (max-width: 825px) {
+  aside div img {position: static;; width: 100%;}
+}
+
+/**
+ * purchase-main styling =======================
+ */
+section.main-purchase {
+  width: 100%;
+  padding: 0;
+  border: 0;
+  margin: 0;
+  height: 1300px;
+}
+section aside.main-purchase {
+  padding-left: 20px;
+  padding-right: 20px;
+  display: block;
+  padding-top: 50px;
+}
+
+section aside.main-purchase img {
+  width: 35%;
+  height: auto;
+}
+
+.purchaseDescription {
+  width: 55%;
+  float: right;
+  height: 365px;
+  margin-right: 10px;
+}
+
+
+.purchaseDescription h2, .purchaseDescription h3, .purchaseDescription h4 {
+  color: blue;
+  font-size: 20px;
+  margin: 0;
+}
+.purchaseDescription em {
+  font-style: italic;
+}
+
+section aside::after {
+  content: " ";
+  clear: both;
+  display: table;
+}
+
+aside strong {
+  color: red;
+}
+
+#quantity1, #quantity2, #quantity3 {
+  width: 50px;
+
+}
+section aside button {
+  width: 50%;
+  float: left;
+  height: 50px;
+  background-color: white;
+  color: red;
+  border-color: grey;
+  border-radius: 10px;
+  margin-right: 180px;
+  transition-duration: 500ms;
+  transition-delay: 200ms;
+
+}
+
+section aside button:hover {
+  width: 80%;
+  background-color: red;
+  color: white;
+}
+
+@media only screen and (max-width: 730px) {
+  .purchaseDescription {float: none; margin-top: 20px; width: 100%; text-align: center;}
+  section aside.main-purchase img {display: block; width: 50%; margin: auto;}
+  section aside button {float: none; margin: auto;}
+}
+
+/**
+ * contact-main styling =======================
+ */
+ section.main-Contact{
+   width: 100%;
+   margin: 0;
+   height: 800px;
+ }
+main.main-Contact {
+  position: relative;
+  height: 600px;
+}
+ aside.main-Contact {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+
+}
+main img.main-Contact{
+  width: 50%;
+  height: auto;
+  position: static;
+}
+
+form {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  width: 40%;
+}
+
+form div.rowFront {
+  width: 100%;
+  padding: 10px 20px 10px 0;
+}
+form div.rowRear {
+  width: 100%;
+  box-sizing: border-box;
+}
+label {
+  font-size: 20px;
+}
+input {
+  width: 50%;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-left: 5px;
+  border-radius: 10px;
+  transition-duration: 300ms;
+}
+
+textarea {
+  width: 95%;
+  height: 200px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+div.button {
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+button {
+  width: 100%;
+  color: white;
+  background-color: green;
+  padding: 10px;
+  margin-top: 5px;
+}
+
+input:focus {
+  width: 80%
+}
+
+@media only screen and (max-width: 800px) {
+  section.main-Contact {height: 200px;}
+  form.contact-form {position: static;; width: 100%; text-align: center;}
+  main img.main-Contact {width: 50%; margin: auto;}
+  main.main-Contact {height: 800px}
+  aside.main-Contact {text-align: center;}
+  textarea {width: 50%;}
+  button {width: 50%;}
+
+}
